@@ -23,7 +23,7 @@
 ```yaml
 # system configuration
 system:
-		port: ":8080"  
+	port: ":8080"  
 
 jwt:
     secret: "blogSystem"
@@ -31,16 +31,16 @@ jwt:
 
 # mysql配置
 mysql:
-		host: "127.0.0.1"
-		port: "3306"
-		config: "charset=utf8mb4&parseTime=True&loc=Local"
-		db-name: "test"
-		username: "username"
-		password: "pwd"
-		charset: "utf8mb4"
+	host: "127.0.0.1"
+	port: "3306"
+	config: "charset=utf8mb4&parseTime=True&loc=Local"
+	db-name: "test"
+	username: "username"
+	password: "pwd"
+	charset: "utf8mb4"
 log:
-		level: "debug"
-		output-file: ""  # 留空表示输出到stdout
+	level: "debug"
+	output-file: ""  # 留空表示输出到stdout
 ```
 
 请根据本地环境修改 `mysql` 配置（用户名、密码、数据库名等）。
@@ -90,7 +90,7 @@ CREATE DATABASE test CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
 go run main.go
 ```
 
-4. 在另一终端执行上面的 curl 命令来获得真实响应。若你希望将输出保存为文件：
+4. 在另一终端执行下述脚本来测试请求
 
 ```bash
 bash tests/run_full_test.sh
