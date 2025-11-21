@@ -1,0 +1,20 @@
+# system configuration
+system:
+    port: ":8080"  
+
+jwt:
+    secret: "blogSystem"
+    expiretime: 168 #  24 * 7
+
+# mysql配置
+mysql:
+    host: "127.0.0.1"
+    port: "3306"
+    config: "charset=utf8mb4&parseTime=True&loc=Local"
+    db-name: "test"
+    username: "username"
+    password: "pwd"
+
+log:
+    level: "debug"
+    output-file: ""  # 留空表示输出到stdout
