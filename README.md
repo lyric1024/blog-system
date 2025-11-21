@@ -23,8 +23,9 @@
 ```yaml
 # system configuration
 system:
-	port: ":8080"  
-
+	port: ":8080"
+	
+# jwt
 jwt:
     secret: "blogSystem"
     expiretime: 168 #  24 * 7
@@ -37,7 +38,7 @@ mysql:
 	db-name: "test"
 	username: "username"
 	password: "pwd"
-	charset: "utf8mb4"
+
 log:
 	level: "debug"
 	output-file: ""  # 留空表示输出到stdout
